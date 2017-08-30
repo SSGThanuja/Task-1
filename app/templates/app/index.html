@@ -1,0 +1,18 @@
+<form action="{% url 'app:create' %}" method="post">
+	{% csrf_token %}
+	name<input type="text" name='name' required><br>
+	Male<input type="radio" name='gender' value="M"><br>
+	Female<input type="radio" name='gender' value="F"><br>
+	age<input type="int" name='age' required><br>
+	<input type="submit" value="Submit">
+</form>
+
+
+
+<form action="{% url 'app:read' %}" method="post">
+	{% csrf_token %}
+Name<input type="text" name='name' required><br>
+<input type="submit" value="submit">
+</form>
+
+

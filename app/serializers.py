@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from django.contrib.auth.models import User
 
 from .models import Member, Household, Photo, Audio, Farm, Cropping, Point
 
@@ -48,3 +49,4 @@ class PointSerializer(serializers.ModelSerializer):
 	class Meta:
 		model = Point
 		fields = '__all__'
+
